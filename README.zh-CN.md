@@ -21,7 +21,7 @@
   <a href="https://www.youtube.com/channel/UChtshixMhvtgBWzoD9R_Qfg"><img src="docs/readme/badges/youtube.svg" alt="OpenDesign 的 YouTube 频道" /></a>
 </p>
 
-<p align="center"><a href="#quick-start">快速开始</a> · <a href="#agent-wall">支持的 Agent</a> · <a href="#showcase">可玩游戏模板</a> · <a href="#features">核心能力</a> · <a href="#publish-monetize">发布与变现</a> · <a href="#technical-guide">MCP 与架构</a> · <a href="#community">社区共建</a></p>
+<p align="center"><a href="#quick-start">快速开始</a> · <a href="#agent-wall">支持的 Agent</a> · <a href="#showcase">可玩游戏模板</a> · <a href="#features">核心能力</a> · <a href="#publish-monetize">发布与变现</a> · <a href="#technical-guide">接入与 MCP</a> · <a href="#community">社区共建</a></p>
 
 <div align="center">
 
@@ -305,14 +305,14 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 一款完整的游戏离不开主视觉、角色立绘、3D 无缝贴图、背景音乐、角色配音和清脆音效。OpenGame 通过内置 **Model Gateway** 将多模态生成直接接入游戏工程，同时让 API Key 留在本地工作区，不写入游戏源码。
 
 <p>
-  <img src="docs/readme/models/codex.svg" width="124" alt="Codex Image">
-  <img src="docs/readme/models/nano-banana.svg" width="124" alt="Nano Banana 2">
-  <img src="docs/readme/models/flux.svg" width="124" alt="FLUX">
-  <img src="docs/readme/models/seedance.svg" width="124" alt="Seedance">
-  <img src="docs/readme/models/wan.svg" width="124" alt="Wan">
-  <img src="docs/readme/models/suno.svg" width="124" alt="Suno">
-  <img src="docs/readme/models/elevenlabs.svg" width="124" alt="ElevenLabs">
-  <img src="docs/readme/models/kokoro.svg" width="124" alt="Kokoro">
+  <img src="docs/readme/models/codex.svg" width="148" alt="Codex Image">
+  <img src="docs/readme/models/nano-banana.svg" width="148" alt="Nano Banana 2">
+  <img src="docs/readme/models/flux.svg" width="148" alt="FLUX">
+  <img src="docs/readme/models/seedance.svg" width="148" alt="Seedance"><br>
+  <img src="docs/readme/models/wan.svg" width="148" alt="Wan">
+  <img src="docs/readme/models/suno.svg" width="148" alt="Suno">
+  <img src="docs/readme/models/elevenlabs.svg" width="148" alt="ElevenLabs">
+  <img src="docs/readme/models/kokoro.svg" width="148" alt="Kokoro">
 </p>
 
 | 游戏素材层 | 推荐模型（在 Model Settings 配置后自动发现） | 零 Key / 代码内建降级方案 |
@@ -352,43 +352,7 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 
 <a id="technical-guide"></a>
 
-## 🛠️ 配置、12 个游戏 MCP 工具与系统架构
-
-![OpenGame 全栈 AI 游戏创作链路](docs/readme/opengame-architecture.zh-CN.svg)
-
-<details>
-<summary>展开查看完整文字架构说明</summary>
-
-```text
-创作入口（BYOA —— 22 个本地 Agent）
-DeepSeek TUI/Harness · Claude Code · Codex · WorkBuddy · Gemini CLI · Cursor · OpenCode ...
-  ├── 一键复刻 26 款内置可玩模板 (templates/games/)
-  ├── 一键风格化 / 换皮（保留玩法壳子，替换角色、世界观、画风与音频）
-  └── 一句话从零打造 2D / 3D / 9:16 试玩广告
-                             │
-                             │ stdio MCP（12 个游戏工具 + 多模态素材工具）
-                             ▼
-OPENGAME STUDIO 与本地运行时（Node.js + TypeScript + React 19 + Vite）
-  ├── Game Studio 界面 (/studios/game) —— 浏览、试玩、Remix、查看源码与预告片
-  ├── openmotion-game Skill + 18 份游戏工程参考手册
-  └── 游戏工程目录 —— HTML5 / CSS / JS / 内置 Three.js + design/*.md
-                             │
-                ┌────────────┴────────────┐
-                ▼                         ▼
-BYOK 多模态 MODEL GATEWAY         自动化游戏 QA 与交付
-  ├── 图片（GPT Image 2.6,         ├── openmotion_game_validate（50-tick 冒烟）
-  │        Seedream 5.5, FLUX）    ├── openmotion_game_simulate（胜 / 弱 / 挂机三档）
-  ├── 音乐（ElevenLabs, Suno）     ├── openmotion_game_playtest（无头 Chrome 真试玩）
-  ├── 语音（ElevenLabs, BytePlus） ├── openmotion_game_capture_cover（1280×720 封面）
-  └── 视频（Wan 2.7, Seedance）    └── openmotion_game_trailer（19 秒实机 MP4）
-                             │
-                             ▼
-发布与变现路径
-  ├── 本地游戏市场 · 一键云端试玩链接 · 单文件 9:16 试玩广告
-  └── 路线图：TOP 100 赚钱小游戏模板 · 微信/抖音/TikTok/小红书上架引导 · 多模型对战
-```
-
-</details>
+## 🛠️ 接入配置与 12 个游戏 MCP 工具
 
 <a id="agent-setup"></a> <a id="choose-agent"></a>
 

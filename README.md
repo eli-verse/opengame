@@ -21,7 +21,7 @@
   <a href="https://www.youtube.com/channel/UChtshixMhvtgBWzoD9R_Qfg"><img src="docs/readme/badges/youtube.svg" alt="OpenDesign on YouTube" /></a>
 </p>
 
-<p align="center"><a href="#quick-start">Quick Start</a> · <a href="#agent-wall">Agents</a> · <a href="#showcase">Playable Templates</a> · <a href="#features">Why OpenGame</a> · <a href="#publish-monetize">Publish &amp; Monetize</a> · <a href="#technical-guide">MCP &amp; Architecture</a> · <a href="#community">Community</a></p>
+<p align="center"><a href="#quick-start">Quick Start</a> · <a href="#agent-wall">Agents</a> · <a href="#showcase">Playable Templates</a> · <a href="#features">Why OpenGame</a> · <a href="#publish-monetize">Publish &amp; Monetize</a> · <a href="#technical-guide">Setup &amp; MCP</a> · <a href="#community">Community</a></p>
 
 <div align="center">
 
@@ -305,14 +305,14 @@ Use openmotion-game to create a 3D wuxia boss-duel game (style: "3d") set on a m
 A real game needs more than code — it needs key art, character sprites, seamless 3D textures, music loops, voice lines, and crisp sound effects. OpenGame's **Model Gateway** wires multimodal generation directly into the game project while keeping your API keys local and separate from game source.
 
 <p>
-  <img src="docs/readme/models/codex.svg" width="124" alt="Codex Image">
-  <img src="docs/readme/models/nano-banana.svg" width="124" alt="Nano Banana 2">
-  <img src="docs/readme/models/flux.svg" width="124" alt="FLUX">
-  <img src="docs/readme/models/seedance.svg" width="124" alt="Seedance">
-  <img src="docs/readme/models/wan.svg" width="124" alt="Wan">
-  <img src="docs/readme/models/suno.svg" width="124" alt="Suno">
-  <img src="docs/readme/models/elevenlabs.svg" width="124" alt="ElevenLabs">
-  <img src="docs/readme/models/kokoro.svg" width="124" alt="Kokoro">
+  <img src="docs/readme/models/codex.svg" width="148" alt="Codex Image">
+  <img src="docs/readme/models/nano-banana.svg" width="148" alt="Nano Banana 2">
+  <img src="docs/readme/models/flux.svg" width="148" alt="FLUX">
+  <img src="docs/readme/models/seedance.svg" width="148" alt="Seedance"><br>
+  <img src="docs/readme/models/wan.svg" width="148" alt="Wan">
+  <img src="docs/readme/models/suno.svg" width="148" alt="Suno">
+  <img src="docs/readme/models/elevenlabs.svg" width="148" alt="ElevenLabs">
+  <img src="docs/readme/models/kokoro.svg" width="148" alt="Kokoro">
 </p>
 
 | Game Asset Layer | Recommended Models (when configured in Model Gateway) | Zero-Key / Built-in Fallback |
@@ -352,43 +352,7 @@ Turn playable prototypes into real games people can play, share, and pay for.
 
 <a id="technical-guide"></a>
 
-## 🛠️ Setup, MCP Tools & Architecture
-
-![OpenGame Full-Stack Creation Pipeline](docs/readme/opengame-architecture.svg)
-
-<details>
-<summary>Read the full architecture as text</summary>
-
-```text
-ENTRY POINT (BYOA — 22 Local Agents)
-DeepSeek TUI/Harness · Claude Code · Codex · WorkBuddy · Gemini CLI · Cursor · OpenCode ...
-  ├── Remix one of 26 built-in playable templates (templates/games/)
-  ├── Re-style an existing game shell (new art, theme, characters & audio)
-  └── Build an original 2D / 3D / 9:16 Playable Ad from a one-line brief
-                             │
-                             │ stdio MCP (12 game tools + media/asset tools)
-                             ▼
-OPENGAME STUDIO & LOCAL RUNTIME (Node.js + TypeScript + React 19 + Vite)
-  ├── Game Studio UI (/studios/game) — browse, play, remix, inspect code & trailers
-  ├── openmotion-game Skill + 18 engineering reference handbooks
-  └── Game Workspace — HTML5 / CSS / JS / vendored Three.js + design/*.md
-                             │
-                ┌────────────┴────────────┐
-                ▼                         ▼
-BYOK MODEL GATEWAY               AUTOMATED GAME QA
-  ├── Image (GPT Image 2.6,        ├── openmotion_game_validate (50-tick smoke)
-  │          Seedream 5.5, FLUX)   ├── openmotion_game_simulate (win / weak / idle)
-  ├── Music (ElevenLabs, Suno)     ├── openmotion_game_playtest (headless Chrome)
-  ├── Voice (ElevenLabs, BytePlus) ├── openmotion_game_capture_cover (1280×720 PNG)
-  └── Video (Wan 2.7, Seedance)    └── openmotion_game_trailer (19s MP4 trailer)
-                             │
-                             ▼
-DELIVERY & MONETIZATION
-  ├── Local Game Market · One-Click Cloud Web Share Link · Single-File 9:16 Playable Ad
-  └── Roadmap: Top 100 Profitable Templates · WeChat/Douyin/TikTok/Web Guides · AI Arena
-```
-
-</details>
+## 🛠️ Setup & MCP Tools
 
 <a id="agent-setup"></a> <a id="choose-agent"></a>
 
