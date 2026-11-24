@@ -31,7 +31,7 @@
 
 # Introducing OpenGame
 
-**Game AGI has arrived.** OpenGame is **the first Super Game Agent** — an open-source, full-stack AI game studio that turns your local coding agent into a complete game production pipeline, from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
+OpenGame is **the first Super Game Agent** — an open-source, full-stack AI game studio that turns your local coding agent into a complete game production pipeline, from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
 
 - 🎮 **One-Click Remix Any Game.** Start from **26 built-in playable HTML5 / WebGL / Three.js templates** — spanning 3D racers, voxel shooters, anime puzzles, pixel platformers, horror escapes, narrative adventures, and viral 9:16 portrait mini-games & playable ads. Every template ships with complete editable source and design specs.
 - 🎨 **One-Click Re-style Any Game.** Keep a proven game loop and engineering shell, and transform characters, worlds, themes, art direction, and audio in minutes — turn an anime platformer into wuxia ink-wash or cyberpunk neon. Because the core mechanics already run and validate cleanly, fast, low-cost models like **DeepSeek** can ship polished remixes right away, while frontier models like **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** push ambitious original 3D builds from scratch.
