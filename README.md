@@ -468,6 +468,20 @@ Share a playable game template, a remixable mini-game genre kit, an art-style gu
 
 [Contribute](CONTRIBUTING.md) · [Repository Guidelines](AGENTS.md) · [Report an Issue](https://github.com/OpenDesignHQ/opengame/issues)
 
-[OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_en) · [Discord](https://discord.com/invite/M7NnHS9gNa) · [Feishu](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b6cs46dc-acb2-48ed-941d-c45642ead841) · [X @OpenDesignHQ](https://x.com/OpenDesignHQ) · [X @OpenDesignDevs](https://x.com/OpenDesignDevs) · [YouTube](https://www.youtube.com/channel/UChtshixMhvtgBWzoD9R_Qfg)
+## Contributors
 
-[**⭐ Star OpenGame on GitHub**](https://github.com/OpenDesignHQ/opengame)
+Thanks to everyone who has taken part — code, game templates, skills, docs, feedback, and issues.
+
+<a href="https://github.com/OpenDesignHQ/opengame/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OpenDesignHQ/opengame&amp;max=500&amp;columns=20&amp;anon=1" alt="OpenGame contributors" />
+</a>
+
+## Star History
+
+<a href="https://www.star-history.com/#OpenDesignHQ/opengame&amp;Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=opendesignhq%2Fopengame&amp;type=Date&amp;theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=opendesignhq%2Fopengame&amp;type=Date" />
+    <img alt="OpenGame Star History" src="https://api.star-history.com/svg?repos=opendesignhq%2Fopengame&amp;type=Date" />
+  </picture>
+</a>
