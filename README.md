@@ -33,10 +33,10 @@
 
 OpenGame is **the first Super Game Agent** — an open-source, full-stack AI game studio that turns your local coding agent into a complete game production pipeline, from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
 
-- 🎮 **One-Click Remix Any Game.** Start from **26 built-in playable HTML5 / WebGL / Three.js templates** — spanning 3D racers, voxel shooters, anime puzzles, pixel platformers, horror escapes, narrative adventures, and viral 9:16 portrait mini-games & playable ads. Every template ships with complete editable source and design specs.
-- 🎨 **One-Click Re-style Any Game.** Keep a proven game loop and engineering shell, and transform characters, worlds, themes, art direction, and audio in minutes — turn an anime platformer into wuxia ink-wash or cyberpunk neon. Because the core mechanics already run and validate cleanly, fast, low-cost models like **DeepSeek** can ship polished remixes right away, while frontier models like **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** push ambitious original 3D builds from scratch.
-- 💰 **End-to-End Pipeline: Idea → Build → Verify → Publish → Monetize.** Every game goes through deterministic rule validation, 3-tier headless balance simulation, real headless-browser playtesting, automated 1280×720 cover capture, and 19-second gameplay trailer generation — then ships as a local playable build, a one-click public web URL, or a single-file 9:16 Playable Ad with an App Store / Google Play CTA.
-- 🔓 **Full-Stack Open Source (BYOA + BYOK).** LLM code, key art & sprites, textures, video cutscenes, background music, voice-over, procedural Web Audio SFX, and vendored Three.js 3D — every layer of game creation is open source. Bring [your own local agent](#agent-wall) and your own API keys, or connect [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_en).
+- 🎮 **One-Click Remix Any Game.** **26 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
+- 🎨 **One-Click Re-style Any Game.** Keep a proven game loop while swapping characters, art style, and audio — affordable models like **DeepSeek** ship polished reskins fast, while **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** build original 3D worlds from scratch.
+- 💰 **End-to-End Pipeline: Build → Verify → Publish & Monetize.** Automated validation, simulation, headless playtesting, cover capture, and trailers — ship a live web link, a 9:16 Playable Ad, or mini-game platform builds.
+- 🔓 **Full-Stack Open Source (BYOA + BYOK).** Code, art, video, music, voice, SFX, and Three.js 3D are all open source. Bring [your local agent](#agent-wall) and keys, or connect [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_en).
 
 <a id="quick-start"></a> <a id="快速开始"></a>
 
@@ -71,10 +71,6 @@ npm ci
 npm run build:studio
 npm start
 ```
-
-Open the `previewUrl` printed at startup and navigate to **`/studios/game`** (for example `http://localhost:4173/studios/game`) to launch **OpenGame Studio**. Play any of the 26 built-in games immediately, click **Remix** to fork a playable draft, or type a one-line brief to hand off to your connected agent.
-
-To connect your local agent to the same workspace via stdio MCP, jump to [Agent & MCP setup](#agent-setup).
 
 <a id="agent-wall"></a>
 

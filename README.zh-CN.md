@@ -33,10 +33,10 @@
 
 OpenGame 是**首个开源全栈 Super Game Agent**——把你本地的编程 Agent 变成一座完整的 AI 游戏工作室，从一句话创意或爆款游戏模板出发，走完**制作 → 自动化试玩验证 → 一键在线分享 → 上架变现**的端到端全链路。
 
-- 🎮 **一键复刻任何游戏。** 仓库内置 **26 款开箱可玩的 HTML5 / WebGL / Three.js 游戏模板**，覆盖 3D 竞速、体素射击、二次元消除、像素跑酷、恐怖解谜、分支叙事，以及 9:16 竖屏爆款小游戏与试玩广告。每一款都附带完整可编辑源码与设计文档。
-- 🎨 **一键风格化任何游戏。** 保留经过验证的核心玩法和工程壳子，在几分钟内替换场景、角色、世界观、美术画风（3D / 体素 / 动漫 / 像素 / 水墨武侠 / 赛博霓虹）和配乐。依托成熟的工程骨架，**DeepSeek** 等高性价比开源模型也能快速产出可玩成品；搭配 **Claude Fable 5.2**、**Opus**、**Codex**、**Gemini** 等顶级模型，则可以从零冲击 3D 动作与高完成度原创大作。
-- 💰 **端到端全链路：想法 → 制作 → 验证 → 上架 → 变现。** 每个游戏项目都经过确定性规则校验、三档无头通关仿真、真实无头浏览器操作试玩、自动 1280×720 封面截图与 19 秒实机预告片录制；完成后既可一键生成公网试玩链接，也可导出带 App Store / Google Play 转化卡片的单文件 9:16 试玩广告，并衔接小游戏平台上架路径。
-- 🔓 **全栈开源（BYOA + BYOK）。** 代码生成、主视觉与精灵图、贴图、过场视频、背景音乐、角色配音、Web Audio 音效与内置 Three.js 3D —— 做游戏所需的一切全部开源。自带 [本地 Agent](#agent-wall) 和 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh) 统一调用。
+- 🎮 **一键复刻任何游戏。** 内置 **26 款可玩游戏模板**（3D、体素、像素、动漫及 9:16 爆款小游戏 / 试玩广告），源码与设计文档全部可编辑。
+- 🎨 **一键风格化任何游戏。** 保留成熟玩法骨架，快速替换角色、画风与配乐——**DeepSeek** 可低成本稳定换皮，**Claude Fable 5.2 / Opus / Codex / Gemini** 可从零打造 3D 大作。
+- 💰 **全链路闭环：制作 → 验证 → 发布变现。** 自动完成逻辑校验、仿真试玩、封面截图与实机预告片，一键生成在线链接或 9:16 试玩广告，并衔接小游戏上架路径。
+- 🔓 **全栈开源（BYOA + BYOK）。** 代码、美术、视频、音乐、配音与 Three.js 3D 全部开源；自带 [本地 Agent](#agent-wall) 与 API Key，或接入 [OpenDesign Go](https://go.open-design.ai/?utm_source=github&utm_medium=referral&utm_campaign=opengame&utm_content=readme_zh)。
 
 <a id="quick-start"></a> <a id="快速开始"></a>
 
@@ -71,10 +71,6 @@ npm ci
 npm run build:studio
 npm start
 ```
-
-打开终端打印的 `previewUrl` 并访问 **`/studios/game`**（例如 `http://localhost:4173/studios/game`），即可进入 **OpenGame Studio**。你可以立即试玩全部 26 款内置游戏、点击 **Remix** 一键复刻为可编辑草稿，或输入一句话创意交给已连接的 Agent 自动制作。
-
-如需把本地 Agent 接入同一工作区，请查看 [接入本地 Agent 与 MCP 配置](#agent-setup)。
 
 <a id="agent-wall"></a>
 
