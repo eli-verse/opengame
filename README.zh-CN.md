@@ -62,7 +62,7 @@ npx skills add OpenDesignHQ/opengame --skill openmotion-game
 
 ### 3. 从源码在本地启动 OpenGame Studio
 
-环境要求：**Git**、**npm**、**Node.js 22.18+**（CI 锁定 Node.js 26.11.1）。自动化试玩、封面截图与实机预告片还需要本机已安装 Chrome/Chromium（录制 MP4 预告片另需 FFmpeg）。
+环境要求：**Git**、**npm**、**Node.js 22.18+**（CI 锁定 Node.js 26.11.1）。
 
 ```sh
 git -c filter.lfs.process= -c filter.lfs.smudge= -c filter.lfs.required=false clone --depth 1 --single-branch --branch main https://github.com/OpenDesignHQ/opengame.git

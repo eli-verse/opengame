@@ -62,7 +62,7 @@ npx skills add OpenDesignHQ/opengame --skill openmotion-game
 
 ### 3. Run OpenGame Studio locally from source
 
-Requires **Git**, **npm**, and **Node.js 22.18+** (CI pins Node.js 26.11.1). Headless playtesting, cover capture, and trailer recording also use an existing Chrome/Chromium installation (plus FFmpeg for MP4 trailers).
+Requires **Git**, **npm**, and **Node.js 22.18+** (CI pins Node.js 26.11.1).
 
 ```sh
 git -c filter.lfs.process= -c filter.lfs.smudge= -c filter.lfs.required=false clone --depth 1 --single-branch --branch main https://github.com/OpenDesignHQ/opengame.git
