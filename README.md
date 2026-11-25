@@ -404,7 +404,7 @@ Choose your agent to connect the local OpenGame MCP server and Skills:
 }
 ```
 
-> Keep `MOTION_DATA_DIR` outside the git checkout so your games, generated assets, and provider keys stay cleanly separated from repository updates.
+> Keep `MOTION_DATA_DIR` outside the git checkout so your games, generated assets, and provider keys stay cleanly separated from repository updates. See the [full setup guide](docs/opengame-setup.md) and [architecture reference](docs/opengame-architecture.md).
 
 ### 12 Dedicated Game MCP Tools
 

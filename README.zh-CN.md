@@ -404,7 +404,7 @@ OpenGame 在 [`templates/games/`](templates/games/) 中内置了 **26 款开箱�
 }
 ```
 
-> 请将 `MOTION_DATA_DIR` 指向仓库目录之外的绝对路径，确保你的游戏工程、生成素材和 API 密钥与仓库更新完全隔离。
+> 请将 `MOTION_DATA_DIR` 指向仓库目录之外的绝对路径，确保你的游戏工程、生成素材和 API 密钥与仓库更新完全隔离。完整接入细节见 [部署与配置指南](docs/opengame-setup.md) · [系统架构说明](docs/opengame-architecture.md)。
 
 ### 12 个游戏专用 MCP 工具
 

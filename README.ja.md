@@ -404,7 +404,7 @@ openmotion-game を使って、霧深い夕暮れの竹林の崖を舞台にし�
 }
 ```
 
-> 制作したゲーム、生成アセット、API キーをリポジトリ更新から安全に分離するため、`MOTION_DATA_DIR` は Git チェックアウト外のパスに配置してください。
+> 制作したゲーム、生成アセット、API キーをリポジトリ更新から安全に分離するため、`MOTION_DATA_DIR` は Git チェックアウト外のパスに配置してください。詳細は [セットアップガイド](docs/opengame-setup.md) · [アーキテクチャ解説](docs/opengame-architecture.md) をご覧ください。
 
 ### 12 個のゲーム専用 MCP ツール
 
