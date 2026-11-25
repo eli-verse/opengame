@@ -31,7 +31,7 @@
 
 # Introducing OpenGame
 
-OpenGame is **the first Super Game Agent** — an open-source, full-stack AI game engine (an AI-native take on Unreal Engine / Unity) and studio that turns your local coding agent into a complete game production pipeline, from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
+OpenGame is **the first Super Game Agent** — turning your local coding agent into an open-source AI Unreal Engine / Unity and full-stack game studio, taking you from a single prompt or viral game template all the way to automated QA, instant web sharing, and monetization-ready builds.
 
 - 🎮 **One-Click Remix Any Game.** **26 built-in playable templates** (3D, voxel, anime, pixel & 9:16 mini-games / playable ads) with full editable source and design specs.
 - 🎨 **One-Click Re-style Any Game.** Keep a proven game loop while swapping characters, art style, and audio — affordable models like **DeepSeek** ship polished reskins fast, while **Claude Fable 5.2**, **Opus**, **Codex**, and **Gemini** build original 3D worlds from scratch.
